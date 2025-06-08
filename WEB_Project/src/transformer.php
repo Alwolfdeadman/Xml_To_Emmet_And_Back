@@ -49,7 +49,7 @@
     }
 
 
-    function html_to_xml($emmet)
+    function emmet_to_xml($emmet)
     {
         $output = "";
 
@@ -269,7 +269,7 @@
 
 
 
-    $output = isset($_POST['mode']) ? html_to_xml($input_string) : xml_to_emmet($input);
+    $output = isset($_POST['mode']) ? emmet_to_xml($input_string) : xml_to_emmet($input);
     $_SESSION['last_input'] = $input_string;
     $_SESSION['last_output'] = htmlspecialchars($output);
     save(isset($_POST['mode']) ? 2 : 1,$input_string, $output, $_SESSION['id']);
