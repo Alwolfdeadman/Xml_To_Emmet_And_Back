@@ -31,7 +31,7 @@
             }
         }
 
-        if ($value !== '' && isset($_POST['text']))
+        if ($value !== '' && isset($_POST['element_val']))
             $emmet .=  '{' . $value . '}';
 
         $children = $xml->children();
@@ -274,3 +274,21 @@
     $_SESSION['last_output'] = htmlspecialchars($output);
     save(isset($_POST['mode']) ? 2 : 1,$input_string, $output, $_SESSION['id']);
 ?>
+
+<!--
+<bookstore>
+      <book category="fiction">
+          <title lang="en">The Great Gatsby</title>
+          <author>F. Scott Fitzgerald</author>
+          <year>1925</year>
+          <price>10.99</price>
+      </book>
+  </bookstore> 
+
+
+(bookstore>(book[category="fiction"]>(title[lang="en"]{The Great Gatsby})+(author{F. Scott Fitzgerald})+(year{1925})+(price{10.99})))
+
+bbb
+bbb@abv.bg
+pas
+-->

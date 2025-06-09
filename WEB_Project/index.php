@@ -20,7 +20,7 @@
                     <input type="checkbox" id="mode" name="mode" value="1">
                     <label for="switching"> Emmet to XML</label>
                     <input type="checkbox" id="element_val" name="element_val">
-                    <label for="text">Get Value Of Elements</label>
+                    <label for="element_val">Get Value Of Elements</label>
                     <input type="checkbox" id="attributes" name="attributes">
                     <label for="attributes">Get Attributes</label>
                     <input type="checkbox" id="attributes_val" name="attributes_val">

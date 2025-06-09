@@ -31,7 +31,7 @@ $users_table = "create table if not exists users (
     email varchar(200) not null,
     username varchar(100) not null,
     password varchar(256) not null
-)";
+)"; 
 
 $connection -> query($users_table);
 

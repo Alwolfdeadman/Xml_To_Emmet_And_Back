@@ -29,6 +29,6 @@
 	}
 	else
 	{
-		header("location:../login.php?error=More than one user with that name");
+		header("location:../login.php?error=There is no user with those credentials");
 	}
 ?>
